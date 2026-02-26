@@ -1,0 +1,42 @@
+abstract class Animal{
+  void show(){
+    print('Tocando musica padrao...tambores...');
+  }
+  void hide(){
+    print('Fumacinha...puff...sumiu...');
+  }
+  
+}
+class Dog extends Animal{
+  @override
+  void show (){
+    super.show();
+    print('caminhando até o centro...parou.');
+  }
+  void bark(){
+    print('Au au...');
+  }
+}
+class Cat extends Animal{
+  @override
+  void show(){
+    super.show();
+    print('Gato vem pulando pelos galhos, parou no centro');
+  }
+  void meow(){
+    print('Meoooooowwwwww');
+  }
+}
+
+void main(){
+  var c = Cat();
+  c.show();
+  c.meow();
+  c.hide();
+  print('Opcoes de palavras para a crianca clicar');
+  var d = Dog();
+  d.show();
+  d.bark();
+  d.hide();
+  print('Opcoes de palaras para a crianca clicar');
+}
