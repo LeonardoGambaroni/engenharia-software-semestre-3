@@ -1,0 +1,139 @@
+/*
+ * Inferência de Tipos.
+ *
+
+void man(){
+  //quando usamos a palavra var
+  //definimos uma variavel,
+  //o tipo também é definido assim que
+  //a primeira atribuição é feita.
+  var nome = 'Nick';
+  var idade = 3;
+  
+  print("Nome: $nome");
+  print("Idade: $idade");
+}*/
+
+/*
+void main(){
+  //usando inferência
+  var nome = 'Leonardo';
+  //sem usar inferência (definição direta de tipo)
+  int idade = 43;
+  print(nome);
+  print(idade);
+}*/
+
+//FUNÇÃO
+/*
+int soma(int a, int b){
+  return a + b;
+}
+
+int multiplica(int a, int b){
+  return a * b;
+}
+
+void main(){
+  print(soma(2,3));
+  print(multiplica(2,3));
+}*/
+
+//CONDICIONAL
+//Solução rasoável
+/*
+String veredito(int nota){
+  if (nota >= 5){
+    return 'Aprovado'; 
+  }
+  else {
+    return 'Reprovado';
+  }
+}
+
+void main(){
+  
+  int nota = 7;
+  
+  print(veredito(nota));
+  
+}*/
+
+//Solução Ingênua
+/*
+String veredito(int nota){
+  String mensagem;
+  if (nota >= 5){
+    mensagem 'Aprovado'; 
+  }
+  else {
+    mensagem 'Reprovado';
+  }
+  return mensagem;
+}
+
+//Solução Boa
+String veredito (int nota){
+  if(nota >= 5){
+    return 'Aprovado';
+  }
+  return 'Reprovaado';
+}
+
+//Solução Excelente
+String veredito(int nota){
+ return (nota >= 5) ? 'Aprovado' : 'Reprovado'
+}
+
+void main(){
+  
+  int nota = 7;
+  
+  print(veredito(nota));
+  
+}*/
+
+//LISTA
+/*
+void main(){
+  //'final' não permite reatribuir um valor
+  final frutas = ['maçã', 'banana', 'uva'];
+  frutas.add('lichia');
+  
+  for(final f in frutas){
+    print(f);
+  }
+}*/
+
+
+//MAPA
+/*void main(){
+  final meuEndereco = {
+    'logadouro': 'Av. Sobe e Desce',
+    'numero': 1000,
+    'bairro': 'Centro',
+    'cidade': 'Campinas',
+    'UF': 'Sp',
+  };
+  
+  print(meuEndereco['numero']);
+}*/
+
+void main(){
+  
+  String? apelido;
+  print(apelido);
+  
+  apelido = 'Leo';
+  print(apelido);
+  
+  String? nome;
+  nome = 'João';
+  nome = null;
+  nome = 'Pedro';
+  
+  //NULL não é string vazia
+  String? teste = '';
+  teste = null;
+  
+}
