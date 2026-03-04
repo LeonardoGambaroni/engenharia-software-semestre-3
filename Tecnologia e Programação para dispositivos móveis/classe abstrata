@@ -40,3 +40,39 @@ void main(){
   d.hide();
   print('Opcoes de palaras para a crianca clicar');
 }
+
+// PARA CASA, CRIAR A CLASSE DUCK E A CLASSE HORSE
+
+class Horse extends Animal {
+  @override
+  void show(){
+    super.show();
+    print('Cavalo vem galopando ate parar no centro da tela...');
+  }
+  void neigh(){
+    print('Hiiiihiiiihiii');
+  }
+}
+class Duck extends Animal{
+  @override
+  void show(){
+    super.show();
+    print('vem pulando ate o centro... parou...');
+  }
+  void quack(){
+    print('quack-quack...');
+  }
+}
+
+void main (){
+  var h = Horse();
+  h.show();
+  h.neigh();
+  h.hide();
+  print('Opcoes de palavras para a crianca clicar');
+  var duck = Duck();
+  duck.show();
+  duck.quack();
+  duck.hide();
+  print('Opcoes de palavras para a crianca clicar');
+}
