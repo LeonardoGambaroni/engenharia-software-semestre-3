@@ -1,0 +1,76 @@
+abstract class Animal{
+  void show(){
+    print('Tocando musica padrao...tambores...');
+  }
+  void hide(){
+    print('Fumacinha...puff...sumiu...');
+  }
+  
+}
+class Dog extends Animal{
+  @override
+  void show (){
+    super.show();
+    print('caminhando até o centro...parou.');
+  }
+  void bark(){
+    print('Au au...');
+  }
+}
+class Cat extends Animal{
+  @override
+  void show(){
+    super.show();
+    print('Gato vem pulando pelos galhos, parou no centro');
+  }
+  void meow(){
+    print('Meoooooowwwwww');
+  }
+}
+
+// PARA CASA, CRIAR A CLASSE DUCK E A CLASSE HORSE
+
+class Horse extends Animal {
+  @override
+  void show(){
+    super.show();
+    print('Cavalo vem galopando ate parar no centro da tela...');
+  }
+  void neigh(){
+    print('Hiiiihiiiihiii');
+  }
+}
+class Duck extends Animal{
+  @override
+  void show(){
+    super.show();
+    print('vem pulando ate o centro... parou...');
+  }
+  void quack(){
+    print('quack-quack...');
+  }
+}
+
+void main(){
+  var c = Cat();
+  c.show();
+  c.meow();
+  c.hide();
+  print('Opcoes de palavras para a crianca clicar');
+  var d = Dog();
+  d.show();
+  d.bark();
+  d.hide();
+  print('Opcoes de palaras para a crianca clicar');
+  // Exercicio para casa (resolução)
+  var h = Horse();
+  h.show();
+  h.neigh();
+  h.hide();
+  print('Opcoes de palavras para a crianca clicar');
+  var duck = Duck();
+  duck.show();
+  duck.quack();
+  duck.hide();
+  print('Opcoes de palavras para a crianca clicar');
+}
